@@ -1,6 +1,5 @@
 import {configureStore} from "@reduxjs/toolkit"
-
-import { ageReducer } from "./slice/ageSlice.js";
+import { ageReducer } from "./slice/ageSlice.js"
 
 
 const store = configureStore({

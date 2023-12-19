@@ -1,0 +1,134 @@
+.card-countinar{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0deg 0% 94.12%);
+}
+
+.card{
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 690px;
+    background-color: var(--White);
+    border-radius: 25px;
+    border-bottom-right-radius:200px ;
+}
+.form-inpt{
+    position: relative;
+    border-bottom: 2px solid var(--Light-grey);
+
+}
+
+.inpts-countinar{
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.int{
+    display: flex;
+    flex-direction: column;
+}
+
+.int label{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: var(--Smokey-grey);
+    font-weight: 700;
+}
+.int-error label{
+    color: var(--Light-red);
+}
+.int input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 125px;
+    font-size: var(--font-size-inpt);
+    outline: none;
+    border: 1px solid var(--Light-grey);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.int-error input{
+    border-color: var(--Light-red);
+}
+.int .err-msg{
+    color: var(--Light-red);
+    margin-top: 5px;
+    font-size: 12px;
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+}
+.int:not(:last-child){
+    margin-right: 35px;
+}
+.btn-submit{
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--Purple);
+    bottom: -40px;
+    padding: 15px;
+    right: 0;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background-color: var(--Off-black);
+}
+.output-list{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.output-item{
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 800;
+}
+.output-list span{
+    color: var(--Purple);
+    margin: 5px;
+    display: inline-block;
+}
+
+@media (max-width: 768px){
+.card{
+    width: 480px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.int input{
+    width: 100px;
+}
+.btn-submit{
+    padding: 10px;
+}
+.output-item{
+    font-size: 60px;
+}
+}
+@media (max-width: 480px){
+    .card{
+        width: 340px;
+        padding-left: 15px;
+        padding-right: 15px;
+    border-bottom-right-radius:150px ;
+    }
+    .int:not(:last-child){
+        margin-right: 20px;
+    }
+    .int input{
+        width: 80px;
+    }
+    .output-item{
+        font-size: 50px;
+    }
+    .btn-submit{
+        right: 120px;
+}
+}
